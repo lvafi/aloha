@@ -72,3 +72,20 @@ footer {
 background-color: black; /*float right */
 color: #f9f9f9;
 }
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+.logo {
+  float: left;
+  padding: 40px 0 22px 0;
+  position: relative;
+}
