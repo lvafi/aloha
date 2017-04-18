@@ -6,54 +6,77 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="primary-header">
-      <img src="images/aloha-logo.svg" alt="my logo"/>
-      <div class="button">
-       <ul>
-          <li><a href="https://aloha.com/about">ABOUT</a></li>
-          <li><a href="https://aloha.com/shop" >SHOP</a></li>
-          <li><a href="https://aloha.com/featured">FEATURED</a></li>
-          <li><a href="https://aloha.com/updates">UPDATES</a></li>
+    <header class="container group margin">
+      <div class="logo img-resize"><img src="images/aloha-logo.svg" width="250" height="180" alt="my logo"/></div>
+         <ul>
+          <li><a class="btn" href="https://aloha.com/about">ABOUT</a></li>
+          <li><a class="btn" href="https://aloha.com/shop" >SHOP</a></li>
+          <li><a class="btn" href="https://aloha.com/featured">FEATURED</a></li>
+          <li><a class="btn" href="https://aloha.com/updates">UPDATES</a></li>
        </ul>
-      </div>
-      <img src="images/cart-icon.svg" alt="shopping bag"/>
+     <div class="bag"><img src="images/cart-icon.svg" alt="shopping bag"/></div>
     </header>
+    
     <section class="hero">
-     <!-- <img class="image" src="images/banner-girl.png" alt="flower as background"/>-->
-      <p>NEW COLLECTION</p>
-      <h1>Spring/Summer 2016</h1>
+      <div class="container">
+        <p>NEW COLLECTION</p>
+        <h1>Spring/Summer 2016</h1>
+      </div>
     </section> 
     <div class="row">
       <h1>Hand-Crafted Styles</h1>
-      <p>Aloha appeal co. sells the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+      <p>Aloha appeal co. sells the finest ready-to-travel clothing. Browse our <br>current selection of products or sign-up for updates below.</p>
     </div> 
     <div>
-      <h4> Most-Loves Products</h4>
-      <ul>
-      <li><img src="images/stretch-knit-dress.jpg" alt="dress"/>  <h4>DRESSES <br> CHECKED STRECH DRESSES<br> 129.00</h4></li>
-      <li><img src="images/cotton-blue-shirt.jpg"/><h4>SHIRTS <br> Cotton Blue Shirt <br> 89.00</h4></li>
-       <li><img src="images/checked-stretch-dress.jpg"/><h4>DRESSES <br> Checked Strech Dress <br> 129.00</h4></li>
-        <li><img src="images/blue-hipster-backpack.jpg"/><h4>BAGS <br> Blue Hipster Backpack <br> 69.00</h4></li>
-      </ul>
-    </div>      
-    <div>
+      <!--<h4 class="container"> Most-Loves Products</h4>-->
+        <div class="imgContainer container">  
+          <img src="images/stretch-knit-dress.jpg" height="320" width="320" alt="dress"/>  
+          <h4>DRESSES <br> Stretch Knit Dress <br> 129.00</h4>
+          <div class="button">Add to Cart</div>
+        </div>
+      <div class="imgContainer container">   
+        <img src="images/cotton-blue-shirt.jpg" height="320" width="320"/>
+        <h4>SHIRTS <br> Cotton Blue Shirt <br> 89.00</h4>
+        <div class="button">Add to Cart</div>
+      </div> 
+      <div class="imgContainer container"> 
+      <img src="images/checked-stretch-dress.jpg"/>
+      <h4>DRESSES <br> Checked Strech Dress <br> 129.00</h4>
+      <div class="button">Add to Cart</div>
+      </div>
+      <div class="imgContainer container">
+      <img src="images/blue-hipster-backpack.jpg"/>
+      <h4>BAGS <br> Blue Hipster Backpack <br> 69.00</h4>
+      <div class="button">Add to Cart</div>
+      </div>
+      </div>
+    
+
+    <div class="container separator">
       <h4>Sign-up for Updates </h4>
-      <p>stay update our over latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe anytime.</p>
+      <p>stay update our over latest product releases, be first to find out about <br>upcoming sales, and get free style tips from our blog. Unsubscribe anytime.</p>
       <form action="submit.php" method="post">
        <textarea name="message" cols="10" rows="4">
        Your Email
-   </textarea>
-</form>
+       </textarea>
+      </form>
 
     </div>
-    <footer>
-      <p>@2016 Aloha Apparel Co. <br> powered by HTML and CSS.</p>
-      <p>604-604-6040.<a>info@alohaapparel.com</a></p>
-      <p>1490 W Broadway Vancouver, BC Canada </p>
 
-    </footer>    
+  
+  <footer class="grid">
+    <section class="column-1"><p>@2016 Aloha Apparel Co. <br> powered by HTML and CSS.</p>
+      <p>604-604-6040.<a>info@alohaapparel.com</a></p>
+      <small>1490 W Broadway <br>Vancouver, BC Canada </small></section>
+    <section class="column-2">
+      <div class="offset">
+      <nav><div id="icons"><a href="https://github.com/lvafi" target="_blank"> GitHub<img src="images/facebook.png"></a></div></nav>
+      <p>ljkljdlkjkld</p></div>
+      </section>
+  </footer>
   </body>
 </html>
+
 
 
 <!-- CDN for the icon font for social media(fontawesome.io) -->
