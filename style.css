@@ -155,6 +155,7 @@ padding-bottom: 55px;
   display: inline-block;
   vertical-align: top;
 }
+
 .column-1 {
   width: 60%;
 }
@@ -173,4 +174,23 @@ small{
     
    }
 
+
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+.logo {
+  float: left;
+  padding: 40px 0 22px 0;
+  position: relative;
+}
 
