@@ -4,38 +4,46 @@ body {
   margin: 40px 200px;
   font-family: Raleway Light;
   font: #2d2d2d;
+  
 }
-h1, h4{font-family: playfair display;}
+h1, h4{
+  font-family: playfair display;
+  font-size: 3rem;}
 p{
-  font-size: 30px;
+  font-size: 2rem;;
+  margin-bottom: 1rem;
 }
 
- 
+ .margin { margin: 1rem;}
  header footer section nav hero{
-   display:block;
+   display: block;
  }
  
- .btn  {
+ nav{ background: #333;}
+ .btn {
   color: red;
-  /*display: inline-box;*/
+  display: inline-box;
   letter-spacing: .5px;
-  margin-right: 40px;
-  margin-top: 40px;
-  text-transform: uppercase;
+  margin-right: 1rem;
+  margin-top: 1rem;
+ 
  }
-.margin { margin: 25px;}
-nav {padding-top: 80px;
-     padding-right: 40px;
-     }
 
 ol, ul {
   list-style: none;
+  
 
 }
 li {display: inline;}
-a:link {
-    text-decoration: none;
-}
+a:link{text-decoration: none;}
+
+
+
+
+
+
+
+
 .group:before,
 .group:after {
   content: "";
@@ -85,7 +93,7 @@ a:link {
   font-size: 45px;
   /*padding: 15px 20px 15px 50px;*/
 } 
-.container{
+.word-container {
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
@@ -101,9 +109,10 @@ a:link {
 .row p{
    font-size:30px;
 }
-.imgContainer{
-    display: inline-block;
-}
+/*.imgContainer{
+    
+    max-width: 100%;
+}*/
 .separator{
            line-height: 100px;
            background-position: top;
@@ -123,18 +132,7 @@ a:link {
     font-size: 10px;
 }  
                   
-/*.image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}*/
-/*.container{
- width: 2140px;
-}  */
-/* add Eric Meyer reset and normalize.css */
-/*border-radius for the form */
+
 
 footer {
 background-color: black; 
@@ -193,4 +191,82 @@ small{
   padding: 40px 0 22px 0;
   position: relative;
 }
+.category-wrapper {
+  width: 100%;
+  max-width: 1240px;
+  }
+.category-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
 
+.category-item {
+  flex: 1 0 800px;
+  }
+
+
+  
+
+/*
+@media all and (min-width: 600px) {
+  .container {
+    /* no need for this max-width: 1240px;
+  }
+  column-1 {
+    float: none;
+  }
+  column-2 {
+    float: right;
+  }
+}
+
+/*body { margin: 0; background: #333; }
+header { 
+  padding: 0.5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+}
+header div { 
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto; 
+  width: 200px; 
+  margin: .5vw; 
+}
+header div img { 
+  width: 100%; 
+  height: auto; 
+}
+
+
+/*.category {display: flex;
+  flex-wrap: wrap;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+}
+category div img { 
+  width: 100%; 
+  height: auto; 
+} 
+/*div img { 
+  width: 100%; 
+  height: auto; 
+} */
+
+
+/*.container{
+ width: 2140px;
+}  */
+/* add Eric Meyer reset and normalize.css */
+/*border-radius for the form */
