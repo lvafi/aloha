@@ -2,15 +2,125 @@
     box-sizing: border-box;
     outline: none;
 }
+@font-face {
+    font-family: ‘playfair_displaybold’;
+    src: url(‘playfairdisplay-bold-webfont.woff2’) format(‘woff2’),
+         url(‘playfairdisplay-bold-webfont.woff’) format(‘woff’);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ‘playfair_displaybold_italic’;
+    src: url(‘playfairdisplay-bolditalic-webfont.woff2’) format(‘woff2’),
+         url(‘playfairdisplay-bolditalic-webfont.woff’) format(‘woff’);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ‘playfair_displayitalic’;
+    src: url(‘playfairdisplay-italic-webfont.woff2’) format(‘woff2’),
+         url(‘playfairdisplay-italic-webfont.woff’) format(‘woff’);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ‘playfair_displayregular’;
+    src: url(‘playfairdisplay-regular-webfont.woff2’) format(‘woff2’),
+         url(‘playfairdisplay-regular-webfont.woff’) format(‘woff’);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ‘raleway’;
+    src: url(‘raleway-light-webfont.woff2’) format(‘woff2’),
+         url(‘raleway-light-webfont.woff’) format(‘woff’);
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ‘ralewaylight_italic’;
+    src: url(‘raleway-lightitalic-webfont.woff2’) format(‘woff2’),
+         url(‘raleway-lightitalic-webfont.woff’) format(‘woff’);
+    font-weight: lighter;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: ‘ralewaymedium’;
+    src: url(‘raleway-medium-webfont.woff2’) format(‘woff2’),
+         url(‘raleway-medium-webfont.woff’) format(‘woff’);
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: ‘ralewaymedium_italic’;
+    src: url(‘raleway-mediumitalic-webfont.woff2’) format(‘woff2’),
+         url(‘raleway-mediumitalic-webfont.woff’) format(‘woff’);
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.container {
+  padding:0 2%;
+  margin:0 auto;
+  width:100%
+  }
+section { padding:4rem 0
+}
+section h2 { text-align:center
+}
 section {
     padding: 4rem 0;
+}
+body,button,input,select,textarea {
+  color:#2d2d2d;
+  font-family:Raleway Web,sans-serif;
+  font-size:1rem;
+  font-style:normal;
+  font-weight:400;
+  line-height:2}
+  h1,h2,h3 { 
+    font-family:Playfair Display Web,serif;
+    line-height:1
+    }
+  .about h2 {
+    font-family:Playfair Display Web,serif;
+    font-style: italic;  
+    font-size:2.4rem;}
+  h3 { 
+    font-size:1.5rem;
+    margin-bottom:1rem
+    }
+  a,h3 {
+    color:#e2574c
+    }
+a:hover {
+  color:#b64036
+  }
+  
+
+section h2 { text-align:center;
 }
 
 
 .logo {
   width: 200px;
   }
-  .logo img{
+.logo img{
     width: 100%;
   }
 .main-navigation{
@@ -80,16 +190,14 @@ nav ul
 }
 .bold {
   font-weight: 700;
+  font-style:normal;
 }
-h2 {
+h2 {font-family:Playfair Display Web;
     font-size: 2.4rem;
     font-style: italic;
     margin-bottom: 1.5rem;
 }
-h1, h2, h3 {
-    font-family: Playfair Display Web,serif;
-    line-height: 1;
-}
+
 
 .products {
     padding: 0;
@@ -167,9 +275,6 @@ h1, h2, h3 {
 
 
 
-
-
-
 .ctegory-name a {
     color: #fff;
     text-decoration: none;
@@ -192,10 +297,6 @@ h1, h2, h3 {
 .category-square:nth-child(odd) {
     border-right: 0;
 }
-
-
-
-
 
 
 
@@ -224,12 +325,15 @@ element.style {
     padding: 0;
 }
 .product-list:focus{outline:thin dotted}
+.featured h2 {
+  font-style: italic; 
+    font-size:2.4rem;
+    }
 
 
 
 
-
-
+.sign-up-wrapper h2 {font-family:Playfair Display Web,serif;font-style: italic; font-size: 2.4rem}
 .sign-up-wrapper {
     text-align: center;
     margin-top: 50px;
@@ -282,32 +386,90 @@ element.style {
       }
     .logo img{max-width:120px}
     .cart{-ms-flex-preferred-size:20%;flex-basis:20%;-ms-flex-order:3;order:3;width:48px}
-    .main-navigation{-ms-flex-preferred-size:60%;
-    flex-basis:60%;
-    border-top: none;}
-.main-navigation li{font-size:.9rem;margin:0 .5rem}
-.about-text{max-width:720px}
-.category-fullsize{-ms-flex-preferred-size:50%;flex-basis:50%}
-.category-halfsize{-ms-flex-preferred-size:25%;flex-basis:25%}
-.ctegory-name {font-size:1.8rem}
-.product-wrapper{float:left;width:50%}
-.product-wrapper{width:50%}.sign-up-wrapper{max-width:720px}
-.sign-up-form{width:67%}.my-footer{text-align:left}
-.my-footer  {
+    .main-navigation{
+      -ms-flex-preferred-size:60%;
+      flex-basis:60%;
+      border-top: none;
+      position: relative;
+      top: -40px;
+    }
+    .main-navigation li {
+      font-size:.9rem;margin:0 .5rem
+      }
+    .about-text { max-width:720px
+    }
+    .category-fullsize { -ms-flex-preferred-size:50%;flex-basis:50%
+    }
+    .category-halfsize {
+      -ms-flex-preferred-size:25%;flex-basis:25%
+      }
+    .ctegory-name {
+      font-size:1.8rem
+      }
+   .product-wrapper {
+     float:left;width:50%
+     }
+   .product-wrapper {
+     width:50%
+     }
+     .sign-up-wrapper {
+       max-width:720px
+       }
+  .sign-up-form {
+    width:67%
+    }
+    .my-footer {
+      text-align:left
+      }
+  .my-footer  {
   display:-ms-flexbox;
   display:flex;
   -ms-flex-pack:justify;
   justify-content:space-between
   }
-.social{margin-top:0;padding-right:2rem}
-.social li{display:block}
-.network-name{display:inline}}
+.social {
+  margin-top:0;padding-right:2rem
+  }
+.social li {
+  display:block
+  }
+.network-name {
+  display:inline 
+  }}
 
 @media only screen and (min-width:1240px){
-  .container{max-width:1240px}
-  .logo img{max-width:160px}
-  .cart{width:62px}
-  .main-navigation li{font-size:1rem;margin:1rem}
-  .hero{background-size:cover,250px 615px,contain;height:550px;position:relative}
-  .about-text{width:720px}.category-name{font-size:2.4rem}.product-wrapper,.product-wrapper{margin-bottom:0;width:25%}
-  .sign-up-wrapper{width:720px}.social{padding-right:4rem}}
+  .container {
+    max-width:1240px
+    }
+  .logo img {
+    max-width:160px
+    }
+  .cart {
+    width:62px
+    }
+  .main-navigation li {
+    font-size:1rem;
+    margin:1rem
+    }
+  .hero {
+    background-size:cover,250px 615px,contain;
+    height:550px;
+    position:relative
+    }
+  .about-text {
+    width:720px
+    }
+  .category-name {
+      font-size:2.4rem
+      }
+  .product-wrapper,.product-wrapper {
+        margin-bottom:0;
+        width:25%
+        }
+  .sign-up-wrapper
+   {
+     width:720px
+     }
+   .social {
+       padding-right:4rem
+       }}
