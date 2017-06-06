@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display Bold';
     src: url('../fonts/playfairdisplay-bold-webfont.eot');
     src: url('../fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
@@ -10,20 +10,9 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('../fonts/playfairdisplay-bolditalic-webfont.eot');
-    src: url('../fonts/playfairdisplay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
-         url('../fonts/playfairdisplay-bolditalic-webfont.woff') format('woff'),
-         url('../fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
-         url('../fonts/playfairdisplay-bolditalic-webfont.svg#robotoregular') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
 
 @font-face {
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display Italic';
     src: url('../fonts/playfairdisplay-italic-webfont.eot');
     src: url('../fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
@@ -60,7 +49,7 @@
 }
 
 @font-face {
-    font-family: 'Raleway Light';
+    font-family: 'Raleway Light Italic';
     src: url('../fonts/raleway-lightitalic-webfont.eot');
     src: url('../fonts/raleway-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/raleway-lightitalic-webfont.woff2') format('woff2'),
@@ -72,7 +61,7 @@
 }
 
 @font-face {
-    font-family: 'Raleway Light';
+    font-family: 'Raleway Light Bold';
     src: url('../fonts/raleway-medium-webfont.eot');
     src: url('../fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
@@ -83,14 +72,3 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'ralewaymedium_italic';
-    src: url('../fonts/raleway-mediumitalic-webfont.eot');
-    src: url('../fonts/raleway-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-mediumitalic-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-mediumitalic-webfont.woff') format('woff'),
-         url('../fonts/raleway-mediumitalic-webfont.ttf') format('truetype'),
-         url('../fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}

@@ -5,22 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=width=device-width, initial-scale=1">
     <title>aloha </title>
-    <link rel="stylesheet" href="lib/flickity/flickity.min.css">
     <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="lib/flickity/flickity.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <header class="site-header">
+    
+    <header>
       <img src="images/aloha-logo.svg" alt="Aloha Apparel Co. logo" />
       <img src="images/cart-icon.svg" class="cart" alt="Shopping cart" />
       <nav class="main-navigation">
-        <ul>
-          <li><a href="#about">about</a></li>
-          <li><a href="#products">shop</a></li>
-          <li><a href="#featured">featured</a></li>
-          <li><a href="#newsletter">updates</a></li>
+        <ul class="nav">
+          <li class="n-item"><a href="#about">about</a></li>
+          <li class="n-item"><a href="#products">shop</a></li>
+          <li class="n-item"><a href="#featured">featured</a></li>
+          <li class="n-item"><a href="#newsletter">updates</a></li>
         </ul>
       </nav>
     </header>
@@ -30,20 +32,20 @@
       <h1>Spring/Summer 2016</h1>
     </section>
 
-    <main id="about">
+    <section class="about" id="about">
       <h2><em>Hand-Crafted</em><strong>Styles</strong></h2>
       <p>Aloha appeal co. sells the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates
-        below.
-      </p>
-      <div class="products" id="products">
-        <div class="mens double"><a href="#">Men's</a></div>
-        <div class="trends"><a href="#">Trends</a></div>
-        <div class="glasses"><a href="#">Glasses</a></div>
-        <div class="sale"><a href="#">sale</a></div>
-        <div class="bags"><a href="#">bags</a></div>
-        <div class="womens double"><a href="#">women's</a></div>
-      </div>
-    </main>
+        below.</p>
+    </section>  
+
+    <div class="category" id="products">
+      <div class="mens double"><a href="#">Men's</a></div>
+      <div class="trends"><a href="#">Trends</a></div>
+      <div class="glasses"><a href="#">Glasses</a></div>
+      <div class="sale"><a href="#">sale</a></div>
+      <div class="bags"><a href="#">bags</a></div>
+      <div class="womens double"><a href="#">women's</a></div>
+    </div>
 
     <section id="featured">
       <h2><em>Most-Loved</em><strong>Products</strong></h2>
@@ -110,7 +112,7 @@
     </section>
 
     <footer>
-      <div class="container">
+      <div class="about-txt">
         <p>@2016 Aloha Apparel Co.</p>
         <p> powered by HTML and CSS.</p>
         <p>604-604-6040.<a>info@alohaapparel.com</a></p>
