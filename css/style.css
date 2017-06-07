@@ -18,7 +18,7 @@ li {
 }
 
 h1, h2 {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display Bold';
 }
 
 em {
@@ -26,7 +26,7 @@ em {
 }
 
 strong {
-  font-family: 'Raleway Light Bold';
+  font-family: 'Playfair Display Bold';
 }
 
 /* Header-------------------------------------  */
@@ -115,7 +115,28 @@ h1 {
 }
  
 /* "Hand-Crafted Styles" Main----------------*/
+h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1.7rem;
+  display: block;
+  text-align: center;
+}
 
+
+.about p {
+  font-family: 'Raleway Light';
+  font-size: 0.9rem;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  color: #242424;
+  line-height: 2rem;
+  display: block;
+  text-align: center;
+}
 
 .category{
   display: flex;
@@ -127,7 +148,7 @@ h1 {
 }
 
 .mens, .trends, .glasses, .sale, .bags, .womens {
-  font-family: 'ralewaylight';
+  font-family: 'Raleway Light Bold';
   font-weight: bold;
   font-size: 1.5rem;
   padding-top: 22%;
@@ -138,6 +159,28 @@ h1 {
   background-position: center, center;
   background-size: cover, cover;
 }
+
+.mens a, 
+.trends a, 
+.glasses a, 
+.sale a, 
+.bags a, 
+.womens a
+{
+  color: white;
+}
+
+.mens a:hover, 
+.trends a:hover, 
+.glasses a:hover, 
+.sale a:hover, 
+.bags a:hover, 
+.womens a:hover
+{
+  color: skyblue;;
+}
+
+
 .trends, .glasses, .sale, .bags {
   max-width: 50%;
   -ms-flex: 1 1 48%;
@@ -176,61 +219,108 @@ h1 {
 }
 
 /*Most Loved Carousel style-------------------*/
-
-
+.flickity-page-dots {
+  margin-bottom: 1.5rem;
+}
+.product-list {
+  height: 32rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
 
 .product-wrapper {
-    padding: 2rem 1rem;
-    text-align: center;
-    width: 100%;
+  width: 100%;
+  margin-bottom: 0;
+  padding-top: 2rem;
 }
-.flickity-enabled {
-    position: relative;
+
+h4 {
+  font-family: 'Playfair Display';
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: .5rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0;
+  color: #e2574c;
+} 
+
+h5, h3 {
+  font-family: 'Raleway Light';
+  color: #969696;
 }
-.flickity-slider {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+
+h5 {
+  font-size: .9rem;
+  line-height: .9rem;
+  padding: 0;
 }
-element.style {
-    left: 0px;
-    transform: translateX(-2705px);
+
+h3 {
+  font-size: .7rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
-element.style {
-  position: absolute;
-  left: 0px;
-}
-.featured .container {
-    padding: 0;
-}
-.product-list:focus{outline:thin dotted}
-.featured h2 {
-  font-style: italic; 
-    font-size:2.4rem;
-    }
 
 
+/* updates section----------------------*/
 
-
-.sign-up-wrapper h2 {font-family:Playfair Display Web,serif;font-style: italic; font-size: 2.4rem}
-.sign-up-wrapper {
-    text-align: center;
-    margin-top: 50px;
+.email {
+  height: 17.5rem;
+  margin-top: 2rem;
+  padding-top: .2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .2) 100%), url('../images/wave-bkgd.jpg');
+  background-position: bottom, bottom;
+  background-size: cover, 90rem;
 }
-.sign-up-form {
-    display: block;
-    margin: 2rem auto 0;
-    position: relative;
-    width: 90%;
+.email p {
+  font-family: 'Raleway Light';
+  font-size: 0.9rem;
+  margin-top: 0;
 }
-.newsletter {
-    background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url(../images/wave-bkgd.jpg) no-repeat bottom;
-    color: #fff;
-    margin-bottom: 8px;
+.email h2 {
+  text-shadow: 2px 2px #969696;
 }
-.sign-up-form{display:block;margin:2rem auto 0;position:relative;width:90%}input[type=email],input[type=submit]{border:0;border-radius:25px}input[type=email]:focus,input[type=submit]:focus{outline:none}input[type=email]{padding:.5rem 1.75rem;padding-right:150px;width:100%}input[type=email]:focus{box-shadow:1px 1px 6px hsla(0,0%,39%,.8)}input[type=submit]{background-color:#e2574c;color:#fff;cursor:pointer;font-weight:700;padding:.25rem 1.5rem;position:absolute;right:.25rem;top:.25rem}input[type=submit]:focus,input[type=submit]:hover{background-color:#b64036}
+.sign-up-form { 
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 1.5rem auto;
+  padding: .2rem .2rem .2rem .6rem;
+  border-radius: 2rem;
+  background-color: white;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+  
 
+.email input {
+  font-family: 'Raleway Light';
+  font-size: 0.8rem;
+  border: none;
+}
 
+button {
+  float: right;
+  width: 25%;
+  min-width: 110px;
+  max-width: 110px;
+  padding: .5rem 1rem;
+  text-align: center;
+  color: white;
+  border: none;
+  border-color: white;
+  border-radius: 2rem;
+  background-color: #e2574c;
+  box-shadow: none;
+  text-shadow: none;
+  font-family: 'Raleway Light';
+}
+
+/*contact info */
 .my-footer{
   background-color: black;
   color: white;
