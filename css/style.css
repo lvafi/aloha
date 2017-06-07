@@ -49,6 +49,7 @@ header a {
   color: #e2574c;
 }
 
+
 a:hover {
   color: #b64036;
 }
@@ -85,19 +86,30 @@ header img {
   max-height: 3rem;
   padding: .5rem;
 }
+.container {
+  
+    padding: 0 2%;
+    /* margin: 0 auto; */
+    /* width: 100%; */
+}
 
 /* Hero ------------------------------------------- */
-
+h2, .about p {
+  text-align: center;
+}
 
 
 .hero {
-   background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url(../images/banner-girl.png) no-repeat center 60px,url(../images/flower-bkgd.jpg) repeat-x top;
-   background-size: cover,150px 369px,cover;
+   background-image: linear-gradient(to bottom,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url('../images/banner-girl.png'),url('../images/flower-bkgd.jpg');
+   background-repeat: no-repeat, no-repeat, repeat-x;
+   background-position: center, center 2rem, center;
+   background-size: auto, 10rem, auto 30rem;
    height: 14rem;
    position: relative;
    color: #fff;
    text-align: center;
    padding-top: 8.5rem;
+  
    } 
 
 .hero p {
@@ -239,7 +251,7 @@ h4 {
   font-size: 1.3rem;
   font-weight: 400;
   margin-top: .5rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0rem;
   padding-bottom: 0;
   color: #e2574c;
 } 
@@ -320,147 +332,216 @@ button {
   font-family: 'Raleway Light';
 }
 
-/*contact info */
-.my-footer{
-  background-color: black;
+/*contact info--------------------------- */
+ footer {
+    font-family: 'Playfair Display';
+    font-size: .9rem;
+    line-height: 1.5rem;
+    height: 15rem;
+    margin-top: .6rem;
+    padding: 2.5rem;
+    text-align: center;
+    color: white;
+    background-color: #242424;
+    background-size: cover;
+}
+footer a {
+  line-height: 2rem;
+  text-decoration: underline;
   color: white;
-  font-family: Playfair Display Web,serif;
-  padding: 4rem 0;
-  text-align: center;
 }
 
 
-.social{
-    margin-top: 2rem;
-    width: 100%;
-}
-.social li {
-    display: inline-block;
-}
-.fa {
-   color: white;
-}
-.network-name{display:none;}
-
-
-@media only screen and (min-width:600px) {
-    html { 
-      font-size:16px
-      }
-    .main-navigation ul {
-      border-top:0;padding-top:0
-      }
-    .logo {
-      -ms-flex-order:1;order:1;-ms-flex-preferred-size:20%;flex-basis:20%
-      }
-    .logo img{max-width:120px}
-    .cart{-ms-flex-preferred-size:20%;flex-basis:20%;-ms-flex-order:3;order:3;width:48px}
-    .main-navigation{
-      -ms-flex-preferred-size:60%;
-      flex-basis:60%;
-      border-top: none;
-      position: relative;
-      top: -40px;
-    }
-    .main-navigation li {
-      font-size:.9rem;margin:0 .5rem
-      }
-    .about-text { max-width:720px
-    }
-    .category-fullsize { -ms-flex-preferred-size:50%;flex-basis:50%
-    }
-    .category-halfsize {
-      -ms-flex-preferred-size:25%;flex-basis:25%
-      }
-    .ctegory-name {
-      font-size:1.8rem
-      }
-   .product-wrapper {
-     float:left;width:50%
-     }
-   .product-wrapper {
-     width:50%
-     }
-     .sign-up-wrapper {
-       max-width:720px
-       }
-  .sign-up-form {
-    width:67%
-    }
-    .my-footer {
-      text-align:left
-      }
-  .my-footer  {
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-pack:justify;
-  justify-content:space-between
-  }
 .social {
-  margin-top:0;padding-right:2rem
-  }
-.social li {
-  display:block
-  }
-.network-name {
-  display:inline 
-  }}
+  font-size: .8rem;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10rem;
+  margin: 3rem auto 0 auto;
+  -ms-flex-flow: column, nowrap;
+  flex-flow: column, nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex: 0 1 0;
+  flex: 0 1 0;
+}
 
-@media only screen and (min-width:1240px){
-  .container {
-    max-width:1240px
-    }
-  .logo img {
-    max-width:160px
-    }
-  .cart {
-    width:62px
-    }
-  .main-navigation li {
-    font-size:1rem;
-    margin:1rem
-    }
+.social span {
+  display: none;
+}
+
+@media screen and (min-width:600px) {
+  /* Header: NavBar and Header Icons*/
+  nav {
+    border: none;
+  }
+  body {
+    font-size: 16px;
+  }
+  header {
+    height: 4rem;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
   .hero {
-    background-size:cover,250px 615px,contain;
-    height:550px;
-    position:relative
-    }
-  .about-text {
-    width:720px
-    }
-  .category-name {
-      font-size:2.4rem
-      }
-  .product-wrapper,.product-wrapper {
-        margin-bottom:0;
-        width:25%
-        }
-  .sign-up-wrapper
-   {
-     width:720px
-     }
-   .social {
-       padding-right:4rem
-       }}
+    background-size: 10rem cover;
+  }
+  nav {
+    width: 40%;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .cart {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-top: 1.2rem;
+    text-shadow: 2px 2px 2px grey;
+  }
 
-/* accessibility*/ 
-/*skip list*/
-#main[tabindex="-1"]:focus {
-   outline: 0;
-}   
-.screen-reader-text {
-   clip: rect(1px, 1px, 1px, 1px);
-   position: absolute !important;
-   height: 1px;
-   width: 1px;
-   overflow: hidden;
-} 
-.screen-reader-text:focus {
-   clip: auto !important;
-   display: block;
-   height: auto;
-   left: 5px;
-   top: 5px;
-   width: auto;
-   z-index: 100000; /* above all content */
-}  
+  .about p{
+    font-size: 1rem;
+  }
+  /*Category Tiles-------------------------*/
+  .trends, .glasses, .sale, .bags, .mens, .womens {
+    margin: 0.5%;
+    padding-top: 11%;
+    padding-bottom: 11%;
+  }
+  .trends, .glasses, .sale, .bags {
+    max-width: 24%;
+    -ms-flex: 1 0 24%;
+    flex: 1 0 24%;
+  }
+  .mens, .womens {
+    max-width: 49%;
+    -ms-flex: 2 0 49%;
+    flex: 2 0 49%;
+  }
+  .mens, .sale {
+    border-left: 0;
+  }
+  .womens, .glasses {
+    border-right: 0;
+  }
+  /*Flickity Carousel--------------------*/
+  .carousel-main {
+    margin: 0 auto;
+  }
+  .carousel-cell {
+    width: 50%;
+  }
+  /*Email Updates -----------------------*/
+  .txtWrap{
+    align-items: center;
+  }
+  .email {
+    height: 18.5rem;
+  }
+  .email p {
+    font-size: 1.2rem;
+    max-width: 660px;
+    margin: 0 auto;
+  }
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  form button {
+    margin: .05rem;
+  }
+  /*Social Media Bar----------------------*/
+  footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .aboutTxt {
+    font-size: 1rem;
+    padding-top: .5rem;
+    text-align: left;
+  }
+  .social {
+    font-family: 'Raleway Light';
+    font-size: 1.0rem;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+    padding: 1rem 0 0 0;
+    text-align: left;
+    -ms-flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .social i {
+    width: 2rem;
+    height: 1.5rem;
+    -ms-flex: 0;
+    flex: 0;
+  }
+  .social a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    width: 10rem;
+  }
+  .social span {
+    display: inline;
+    text-align: left;
+  }
+}
+
+
+/*Desktop1240 Breakpoint*/
+
+@media screen and (min-width: 1240px) {
+  .wrapper {
+    font-size: 16px;
+  }
+  /*Logo and Cart -------------------------*/
+  header img {
+    max-height: 4rem;
+  }
+  header {
+    height: 6rem;
+  }
+  /*Nav Bar--------------------------------*/
+  .nav {
+    left: 15%;
+  }
+  .n-item a {
+    font-size: 1rem;
+  }
+  /*Hero-----------------------------------*/
+  .hero {
+    height: 22rem;
+    padding-top: 13rem;
+    background-position: center, center 4rem, center;
+    background-size: auto, 15.5rem, auto 100%;
+  }
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+  /*Flickity Carousel-----------------------*/
+  .carousel-main {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .carousel-cell {
+    width: 25%;
+  }
+  /*Updates*/
+  .email {
+    background-size: cover;
+  }
+}
+
+
+
