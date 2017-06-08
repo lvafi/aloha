@@ -106,9 +106,11 @@
       <h2><em>Sign-up for </em><strong>Updates</strong></h2>
       <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
         our blog. Unsubscribe at any time.</p>
-      <form class="sign-up-form">
+      <form action="#updates" onsubmit="return someKindOfFormValidation">
+        <div class="sign-up-form">
         <input type="email" id="your-email" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" placeholder="Your Email">
         <button type="submit">Subscribe</button>
+        </div>
       </form>
     </section>
 

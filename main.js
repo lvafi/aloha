@@ -22,8 +22,8 @@ $(document).ready(function () {
 });
 
 
-
-$(".newsletter").on("submit", "form",
+//alert box for email list
+$('form button').on('click',
   function (t) {
     t.preventDefault();
     var e = $("#your-email");
@@ -31,7 +31,7 @@ $(".newsletter").on("submit", "form",
       e.val("")) : alert("Please submit a valid email address.")
   })
 
-
+//initialized Flickity
 $('.product-list').flickity({
   cellAlign: 'left',
   percentPosition: !1,
