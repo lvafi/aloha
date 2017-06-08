@@ -328,6 +328,7 @@ button {
   box-shadow: none;
   text-shadow: none;
   font-family: 'Raleway Light';
+  cursor: pointer;
 }
 
 /*contact info--------------------------- */
