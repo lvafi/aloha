@@ -42,7 +42,7 @@ header {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
- }
+}
 header a {
   font-size: .8rem;
   text-transform: uppercase;
@@ -177,8 +177,7 @@ h2 {
 .glasses a, 
 .sale a, 
 .bags a, 
-.womens a
-{
+.womens a {
   color: white;
 }
 
@@ -187,8 +186,7 @@ h2 {
 .glasses a:hover, 
 .sale a:hover, 
 .bags a:hover, 
-.womens a:hover
-{
+.womens a:hover {
   color: skyblue;;
 }
 
@@ -337,7 +335,7 @@ button {
     font-family: 'Playfair Display';
     font-size: .9rem;
     line-height: 1.5rem;
-    height: 15rem;
+    height: 10rem;
     margin-top: .6rem;
     padding: 2.5rem;
     text-align: center;
@@ -350,8 +348,10 @@ footer a {
   text-decoration: underline;
   color: white;
 }
-
-
+footer span p {
+  color: #969696
+}
+/* Social Media Bars*/
 .social {
   font-size: .8rem;
   display: -ms-flexbox;
@@ -400,7 +400,6 @@ footer a {
     margin-top: 1.2rem;
     text-shadow: 2px 2px 2px grey;
   }
-
   .about p{
     font-size: 1rem;
   }
@@ -427,10 +426,10 @@ footer a {
     border-right: 0;
   }
   /*Flickity Carousel--------------------*/
-  .carousel-main {
+  .product-list {
     margin: 0 auto;
   }
-  .carousel-cell {
+  .product-wrapper {
     width: 50%;
   }
   /*Email Updates -----------------------*/
@@ -530,11 +529,11 @@ footer a {
     padding: 0;
   }
   /*Flickity Carousel-----------------------*/
-  .carousel-main {
+  .product-list {
     max-width: 1240px;
     margin: 0 auto;
   }
-  .carousel-cell {
+  .product-wrapper {
     width: 25%;
   }
   /*Updates*/
