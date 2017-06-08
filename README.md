@@ -1,4 +1,4 @@
-##Project 1: Aloha Apparel Co.
+## Project 1: Aloha Apparel Co.
 ![Aloha Screenshot](images/aloha-screenshot.png)
 This is a thoughtful write-up about my project...
 
@@ -7,7 +7,7 @@ This is a thoughtful write-up about my project...
 - Optimize for 3 widths: mobile, min-width: 600px, and min-width: 1240px.
 
 
-##Technologies Used:
+## Technologies Used:
 
 - Google Chrome (https://www.google.com/chrome/)
 - Google Chrome Developer Tools
