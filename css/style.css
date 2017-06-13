@@ -1,12 +1,12 @@
 
 
 body { 
-  font-family: 'Raleway Light'; 
+  font-family: 'Raleway Light',sans-serif; 
   font-size: 14px;
   color: #2d2d2d;
 }
 header {
-  font-family: 'Raleway Light Bold'; 
+  font-family: 'Raleway Light Bold', sans-serif; 
 }
 
 a {
@@ -18,15 +18,15 @@ li {
 }
 
 h1, h2 {
-  font-family: 'Playfair Display Bold';
+  font-family: 'Playfair Display Bold',serif;
 }
 
 em {
-  font-family: 'Playfair Display Italic';
+  font-family: 'Playfair Display Italic',serif;
 }
 
 strong {
-  font-family: 'Playfair Display Bold';
+  font-family: 'Playfair Display Bold',serif;
 }
 
 /* Header-------------------------------------  */
@@ -121,6 +121,7 @@ h2, .about p {
 }
 h1 {
   font-size: 2rem;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   padding: 0 4rem;
   text-shadow: 1px 1px #969696;
@@ -160,7 +161,7 @@ h2 {
 }
 
 .mens, .trends, .glasses, .sale, .bags, .womens {
-  font-family: 'Raleway Light Bold';
+  font-family: 'Raleway Light Bold', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   padding-top: 22%;
@@ -245,7 +246,7 @@ h2 {
 }
 
 h4 {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', serif;
   font-size: 1.3rem;
   font-weight: 400;
   margin-top: .5rem;
@@ -501,7 +502,10 @@ footer span p {
 
 @media screen and (min-width: 1240px) {
   .wrapper {
-    font-size: 16px;
+    font-size: 4rem;
+  }
+  .category a {
+    font-size: 3rem;
   }
   /*Logo and Cart -------------------------*/
   header img {
